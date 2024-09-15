@@ -1,0 +1,10 @@
+.env
+.dockerignore
+.venv
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.log
+staticfiles/
+**/migrations/
+.vscode/
