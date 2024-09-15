@@ -69,5 +69,5 @@ urlpatterns = [
     path('filmes/nome/<str:nome>/', FilmePorNomeView.as_view(), name='filme_por_nome'),
     path('filmes/alugar/<str:email>/', AlugarFilmePorNomeView.as_view(), name='alugar_filme'),
     path('filmes/alugados/<str:email>/', VerFilmesAlugadosView.as_view(), name='filmes_alugados'),
-    path('filmes/nota/<str:email>/<str:nome>/', DarNotaAoFilmeAlugadoView.as_view(), name='dar_nota_ao_filme')
+    path('filmes/nota/<str:email>/<str:nome>', DarNotaAoFilmeAlugadoView.as_view(), name='dar_nota_ao_filme')
 ]
